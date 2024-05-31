@@ -11,10 +11,6 @@ interface FloatProps {
     }[]
 }
 
-interface LinkProps {
-    link: string,
-    url : string
-}
 
 const Float: React.FC<FloatProps> = (props) => {
 

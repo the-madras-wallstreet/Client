@@ -1,18 +1,29 @@
-import Image from "next/image"
-import { URL } from "url"
+import Link from "next/link"
+import styles from "../styles/tail.module.css"
 
 interface TailProps {
-    logoPath : URL["href"]
-    links? : []
+    ctrlLinks? : {
+        label: string,
+        url: string
+    }[]
 }
 
 const Tail: React.FC<TailProps> = (props) => {
 
-    const {logoPath} = props
+    const {ctrlLinks} = props
+
+
+    const renderLinks = ctrlLinks?.map((link:any,i:any)=>{
+        return (<Link  style={{
+            color: 'white',
+            listStyle:'none', textDecoration: 'none', placeSelf: 'center'}} key={i} href={link.url}>
+            {link.label}
+        </Link>)
+    })
 
     return(
-        <div>
-            <Image src={logoPath} alt="alt" width={120} height={240} />
+        <div className={styles.tail}>
+            {renderLinks}
         </div>
     )
 }

@@ -10,8 +10,8 @@ export default function Home() {
     <React.Fragment>
           <Head logoPath={brand.logoPath} ></Head>
           <Float serveLinks={links.serveLinks}></Float>
-          <Slick logoPath={''}></Slick>
-          <Tail logoPath={''}></Tail>
+          {/* <Slick logoPath={''}></Slick> */}
+          <Tail ctrlLinks={links.ctrlLinks}></Tail>
     </React.Fragment>
      )
 }

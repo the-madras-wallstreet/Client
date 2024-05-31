@@ -1,0 +1,13 @@
+    .tail {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-color: var(--primary-dark);
+        align-items: center;
+        justify-content: space-between;
+        grid-gap: 32px;
+        padding: 12px 32px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
