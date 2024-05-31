@@ -1,0 +1,9 @@
+    .head {
+        display: grid;
+        background-color: var(--primary-dark);
+        padding: 12px 32px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }

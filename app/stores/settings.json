@@ -1,0 +1,56 @@
+{
+    "brand": {
+        "label": "The Madras Wallstreet",
+        "logoPath": "./brand/labels/white.svg"
+    },
+    "controls": {
+        "portals": {
+            "client": {
+                "label": "Launch Client Portal",
+                "url": "https://app.tmwgc.com/client"
+            }
+        },
+        "requests": {
+            "call": "/",
+            "audit": "/"
+        }
+    },
+    "links": {
+        "serveLinks": [
+            {
+                "label": "Brand Diffusions",
+                "url": "/"
+            },
+            {
+                "label": "Demand Generations",
+                "url": "/"
+            },
+            {
+                "label": "Revenue Operations",
+                "url": "/"
+            }
+        ],
+        "ctrlLinks": [
+            {
+                "label": "Company",
+                "url": "/"
+            },
+            {
+                "label": "Works",
+                "url": "/"
+            },
+            {
+                "label": "Industries",
+                "url": "/"
+            },
+            {
+                "label": "Estimations",
+                "url": "/"
+            },
+            {
+                "label": "Insights",
+                "url": "/"
+            }
+        ]
+    }
+}
