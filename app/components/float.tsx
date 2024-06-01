@@ -20,7 +20,7 @@ const Float: React.FC<FloatProps> = (props) => {
 
     const renderLinks = serveLinks?.map((link,i)=>{
         return (<Link  style={{
-            listStyle:'none', textDecoration: 'none', placeSelf: 'center'}} key={i} href={link.url}>
+            listStyle:'none', textDecoration: 'none', placeSelf: 'center', fontSize: '12px'}} key={i} href={link.url}>
             {link.label.split(' ')[0]}<br></br>
             {link.label.split(' ')[1]}
         </Link>)
