@@ -32,6 +32,30 @@ body {
     border-radius: 1px;
 }
 
-a {
+a,
+p {
     color: var(--secondary-text);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+h1 {
+    color: var(--primary-dark);
+    font-size: 1.9rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: -0.892px;
+    margin: 4px;
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 16px 8px;
+    font-family: var(--font-inter);
+    background-color: var(--primary-dark);
+    color: var(--canvas-board);
+    font-weight: 500;
+
 }
