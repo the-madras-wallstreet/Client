@@ -16,4 +16,6 @@
   top: 0;
   left: 0;
   right: 0;
+  box-shadow: 4px 4px 100px 0px rgba(160, 160, 160, 0.12);
+
 }
