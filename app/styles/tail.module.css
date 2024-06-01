@@ -1,13 +1,16 @@
     .tail {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-flow: column;
         background-color: var(--primary-dark);
         align-items: center;
-        justify-content: space-between;
-        grid-gap: 32px;
-        padding: 12px 32px;
+        padding: 12px 8px;
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
+    }
+
+    .control {
+        display: grid;
+        place-items: center;
     }

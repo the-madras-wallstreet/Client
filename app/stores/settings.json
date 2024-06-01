@@ -33,23 +33,28 @@
         "ctrlLinks": [
             {
                 "label": "Company",
-                "url": "/"
+                "url": "/",
+                "icon": "compass"
             },
             {
                 "label": "Works",
-                "url": "/"
+                "url": "/",
+                "icon": "paperclip"
             },
             {
                 "label": "Industries",
-                "url": "/"
+                "url": "/",
+                "icon": "zap"
             },
             {
                 "label": "Estimations",
-                "url": "/"
+                "url": "/",
+                "icon": "file"
             },
             {
                 "label": "Insights",
-                "url": "/"
+                "url": "/",
+                "icon": "feather"
             }
         ]
     }
