@@ -29,7 +29,7 @@ const Slick: React.FC<SlickProps> = (props) => {
         const router = useRouter()
 
          const logoHandler = () => {
-         router.replace('/')
+         window.location.href = '/'
         
     }
 
@@ -53,7 +53,7 @@ const Slick: React.FC<SlickProps> = (props) => {
 
     const renderSlick = <div className={styles.slick}>
             <div className={styles.title}>
-                <Image onClick={logoHandler} src={logoPath} alt="alt" width={150} height={100} /> 
+                <Image style={{cursor: 'pointer'}} onClick={logoHandler} src={logoPath} alt="alt" width={150} height={100} /> 
                 <div style={{cursor: 'pointer'}} onClick={menuHandler} className={styles.closer}>
                 <Image src={'/icons/close.svg'} alt="alt" width={24} height={24} /> 
                 <p style={{color:'white', fontSize: '12px', margin: '0px'}} >Close</p>
