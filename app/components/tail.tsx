@@ -31,10 +31,10 @@ const Tail: React.FC<TailProps> = (props) => {
 
 
         return (
-        <div className={styles.control} key={i}>
+        <div onClick={()=> shiftHandler(link.url)} className={styles.control} key={i}>
         <Image src={`/icons/${(link.url===pathname)?'active':'inactive'}/${link.icon}.svg`} 
         alt="alt" width={24} height={24} />
-        <Link onClick={()=> shiftHandler(link.url)}  style={{
+        <Link   style={{
             color: `${(link.url===pathname)?'var(--active)': 'var(--inactive)'}`,fontSize: '10px',
             listStyle:'none', textDecoration: 'none'}}  href={link.url}>
             {link.label}

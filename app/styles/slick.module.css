@@ -39,4 +39,6 @@
     justify-content: flex-start;
     grid-gap: 12px;
     margin: 24px 0px;
+    cursor: pointer;
+    align-items: center;
 }

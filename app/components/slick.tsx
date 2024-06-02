@@ -30,10 +30,10 @@ const Slick: React.FC<SlickProps> = (props) => {
 
      const renderLinks = ctrlLinks?.map((link:any,i:any)=>{
         return (
-           <div className={styles.control} key={i}>
+           <div onClick={menuHandler}  className={styles.control} key={i}>
         <Image src={`/icons/${(link.url===pathname)?'active':'inactive'}/${link.icon}.svg`} 
         alt="alt" width={24} height={24} />
-        <Link onClick={menuHandler}  style={{
+        <Link  style={{
             color: `${(link.url===pathname)?'var(--active)': 'var(--inactive)'}`,fontSize: '10px',
             listStyle:'none', textDecoration: 'none'}}  href={link.url}>
             {link.label}
@@ -46,8 +46,8 @@ const Slick: React.FC<SlickProps> = (props) => {
     const renderSlick = <div className={styles.slick}>
             <div className={styles.title}>
                 <Image src={logoPath} alt="alt" width={150} height={100} /> 
-                <div onClick={menuHandler} className={styles.closer}>
-                                    <Image src={'/icons/close.svg'} alt="alt" width={24} height={24} /> 
+                <div style={{cursor: 'pointer'}} onClick={menuHandler} className={styles.closer}>
+                <Image src={'/icons/close.svg'} alt="alt" width={24} height={24} /> 
                 <p style={{color:'white', fontSize: '12px', margin: '0px'}} >Close</p>
                 </div>
             </div>

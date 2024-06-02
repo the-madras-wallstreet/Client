@@ -58,7 +58,14 @@ button {
     background-color: var(--primary-dark);
     color: var(--canvas-board);
     font-weight: 500;
+    cursor: pointer;
 
+
+}
+
+button :hover {
+    opacity: 0.6;
+    transition: 0.3s;
 }
 
 main {
