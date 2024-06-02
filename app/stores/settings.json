@@ -32,11 +32,6 @@
         ],
         "ctrlLinks": [
             {
-                "label": "Company",
-                "url": "/",
-                "icon": "compass"
-            },
-            {
                 "label": "Works",
                 "url": "/",
                 "icon": "paperclip"
@@ -45,6 +40,11 @@
                 "label": "Industries",
                 "url": "/",
                 "icon": "zap"
+            },
+            {
+                "label": "Company",
+                "url": "/",
+                "icon": "compass"
             },
             {
                 "label": "Estimations",
