@@ -33,12 +33,12 @@
         "ctrlLinks": [
             {
                 "label": "Works",
-                "url": "/",
+                "url": "/works",
                 "icon": "paperclip"
             },
             {
                 "label": "Industries",
-                "url": "/",
+                "url": "/industries",
                 "icon": "zap"
             },
             {
@@ -48,12 +48,12 @@
             },
             {
                 "label": "Estimations",
-                "url": "/",
+                "url": "/estimations",
                 "icon": "file"
             },
             {
                 "label": "Insights",
-                "url": "/",
+                "url": "/insights",
                 "icon": "feather"
             }
         ]

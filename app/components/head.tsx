@@ -17,11 +17,16 @@ const Head: React.FC<HeadProps> = (props) => {
 
  
 
+    const callHandler = () => {
+         window.location.href = "tel:8882192787"
+        
+    }
+
     return(
         <div className={styles.head}>
              <Image onClick={menuHandler} src={'/icons/hamburger/white.svg'} alt="alt" width={24} height={24} />           
             <Image src={logoPath} alt="alt" width={142} height={46} />
-            <Image src={'/icons/call.svg'} alt="alt" width={36} height={36} />
+            <Image onClick={callHandler} src={'/icons/call.svg'} alt="alt" width={36} height={36} />
         </div>
     )
 }

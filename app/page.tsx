@@ -52,7 +52,7 @@ export default function Home() {
     </div>
    {isSlickOn &&  <Slick menuHandler={menuHandler} ctrlLinks={links.ctrlLinks} logoPath={brand.logoPath}></Slick>}
     {renderContent}
-    <Tail ctrlLinks={links.ctrlLinks}></Tail>
+    <Tail activeIcon={'/'} ctrlLinks={links.ctrlLinks}></Tail>
   </main>
 
 
