@@ -7,7 +7,7 @@ import styles from '../styles/slick.module.css'
 
 import { useState } from "react"
 
-import {usePathname} from 'next/navigation'
+import {usePathname, useRouter} from 'next/navigation'
 
 interface SlickProps {
     logoPath : URL["href"],
@@ -26,6 +26,12 @@ const Slick: React.FC<SlickProps> = (props) => {
 
     const pathname = usePathname()
 
+        const router = useRouter()
+
+         const logoHandler = () => {
+         router.replace('/')
+        
+    }
 
 
      const renderLinks = ctrlLinks?.map((link:any,i:any)=>{
@@ -43,16 +49,19 @@ const Slick: React.FC<SlickProps> = (props) => {
         )
     })
 
+    
+
     const renderSlick = <div className={styles.slick}>
             <div className={styles.title}>
-                <Image src={logoPath} alt="alt" width={150} height={100} /> 
+                <Image onClick={logoHandler} src={logoPath} alt="alt" width={150} height={100} /> 
                 <div style={{cursor: 'pointer'}} onClick={menuHandler} className={styles.closer}>
                 <Image src={'/icons/close.svg'} alt="alt" width={24} height={24} /> 
                 <p style={{color:'white', fontSize: '12px', margin: '0px'}} >Close</p>
                 </div>
             </div>
         {renderLinks}
-        <button className={styles.launch}>Launch Client Portal</button>
+      
+            <button className={styles.launch}>Launch Client Portal</button>
         </div>
 
 
