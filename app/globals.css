@@ -44,8 +44,9 @@ h1 {
     font-style: italic;
     font-weight: 800;
     line-height: 24px;
-    letter-spacing: -0.892px;
+    letter-spacing: -1.2px;
     margin: 4px;
+    word-spacing: 3px;
 }
 
 button {
@@ -57,4 +58,9 @@ button {
     color: var(--canvas-board);
     font-weight: 500;
 
+}
+
+main {
+    margin-top: 20vh;
+    margin-bottom: 4vh;
 }
