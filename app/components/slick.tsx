@@ -26,13 +26,18 @@ const Slick: React.FC<SlickProps> = (props) => {
 
 
         const active_status = 'inactive'
+
+
+
+
      const renderLinks = ctrlLinks?.map((link:any,i:any)=>{
         return (
         <div className={styles.control} key={i}>
               <Image src={`/icons/${active_status}/${link.icon}.svg`} alt="alt" width={24} height={24} />
-        <Link  style={{
-            color: 'var(--inactive)',fontSize: '14px',
-            listStyle:'none', textDecoration: 'none'}}  href={link.url}>
+        <Link onClick={menuHandler} style={{
+                    color: 'var(--inactive)', fontSize: '14px',
+                    listStyle: 'none', textDecoration: 'none'
+                }} href={link.url}  >
             {link.label}
         </Link>
         </div>
