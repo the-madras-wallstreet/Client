@@ -18,7 +18,7 @@ const Head: React.FC<HeadProps> = (props) => {
  
 
     const callHandler = () => {
-         window.location.href = "tel:8882192787"
+         window.location.href = "tel:+91 8122801215"
         
     }
 
