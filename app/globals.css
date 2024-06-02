@@ -3,8 +3,8 @@
     --primary-lite: #0C1859;
     --primary-lite-ultra: #3A457F;
     --canvas-board: #FEFEFE;
-    --canvas-bluish: ##C7CFF8;
-    --active: #A5B3FF;
+    --canvas-bluish: #C7CFF8;
+    --canvas-pure: white --active: #A5B3FF;
     --inactive: #5464B9;
     --secondary-text: #656565
 }

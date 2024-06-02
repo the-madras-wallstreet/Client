@@ -16,8 +16,6 @@ const Float: React.FC<FloatProps> = (props) => {
 
     const {serveLinks} = props
 
-    console.table(serveLinks)
-
     const renderLinks = serveLinks?.map((link,i)=>{
         return (<Link  style={{
             listStyle:'none', textDecoration: 'none', placeSelf: 'center', fontSize: '12px'}} key={i} href={link.url}>
