@@ -3,7 +3,7 @@
 import Link from "next/link"
 import styles from "../styles/tail.module.css"
 import Image from "next/image"
-import { useRouter } from "next/navigation"
+import { useRouter, usePathname } from "next/navigation"
 
 interface TailProps {
     ctrlLinks? : {
@@ -14,14 +14,12 @@ interface TailProps {
     activeIcon? : any
 }
 
-const Tail: React.FC<TailProps> = (props,params) => {
+const Tail: React.FC<TailProps> = (props) => {
 
         const router = useRouter()
-
+  const pathname = usePathname()
 
     const {ctrlLinks} = props
-
-    const active_status = 'inactive'
 
 
     const shiftHandler = (url:any) => {
@@ -30,11 +28,14 @@ const Tail: React.FC<TailProps> = (props,params) => {
 
 
     const renderLinks = ctrlLinks?.map((link:any,i:any)=>{
+
+
         return (
         <div className={styles.control} key={i}>
-              <Image src={`/icons/${active_status}/${link.icon}.svg`} alt="alt" width={24} height={24} />
+        <Image src={`/icons/${(link.url===pathname)?'active':'inactive'}/${link.icon}.svg`} 
+        alt="alt" width={24} height={24} />
         <Link onClick={()=> shiftHandler(link.url)}  style={{
-            color: 'var(--inactive)',fontSize: '10px',
+            color: `${(link.url===pathname)?'var(--active)': 'var(--inactive)'}`,fontSize: '10px',
             listStyle:'none', textDecoration: 'none'}}  href={link.url}>
             {link.label}
         </Link>

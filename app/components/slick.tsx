@@ -5,7 +5,9 @@ import Link from "next/link"
 import { URL } from "url"
 import styles from '../styles/slick.module.css'
 
-import { useContext, useState } from "react"
+import { useState } from "react"
+
+import {usePathname} from 'next/navigation'
 
 interface SlickProps {
     logoPath : URL["href"],
@@ -20,24 +22,20 @@ interface SlickProps {
 const Slick: React.FC<SlickProps> = (props) => {
 
     const {logoPath, ctrlLinks, menuHandler} = props
-
-
     const [isSlickOn, setIsSlickOn] = useState(true)
 
-
-        const active_status = 'inactive'
-
+    const pathname = usePathname()
 
 
 
      const renderLinks = ctrlLinks?.map((link:any,i:any)=>{
         return (
-        <div className={styles.control} key={i}>
-              <Image src={`/icons/${active_status}/${link.icon}.svg`} alt="alt" width={24} height={24} />
-        <Link onClick={menuHandler} style={{
-                    color: 'var(--inactive)', fontSize: '14px',
-                    listStyle: 'none', textDecoration: 'none'
-                }} href={link.url}  >
+           <div className={styles.control} key={i}>
+        <Image src={`/icons/${(link.url===pathname)?'active':'inactive'}/${link.icon}.svg`} 
+        alt="alt" width={24} height={24} />
+        <Link onClick={menuHandler}  style={{
+            color: `${(link.url===pathname)?'var(--active)': 'var(--inactive)'}`,fontSize: '10px',
+            listStyle:'none', textDecoration: 'none'}}  href={link.url}>
             {link.label}
         </Link>
         </div>

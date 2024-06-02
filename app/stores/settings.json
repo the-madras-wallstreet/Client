@@ -34,27 +34,27 @@
             {
                 "label": "Works",
                 "url": "/works",
-                "icon": "paperclip"
+                "icon": "works"
             },
             {
                 "label": "Industries",
                 "url": "/industries",
-                "icon": "zap"
+                "icon": "industries"
             },
             {
                 "label": "Company",
                 "url": "/",
-                "icon": "compass"
+                "icon": "company"
             },
             {
                 "label": "Estimations",
                 "url": "/estimations",
-                "icon": "file"
+                "icon": "estimations"
             },
             {
                 "label": "Insights",
                 "url": "/insights",
-                "icon": "feather"
+                "icon": "insights"
             }
         ]
     }
